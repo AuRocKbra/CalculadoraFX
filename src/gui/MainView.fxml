@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="400.0" minHeight="500.0" minWidth="400.0" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <SplitPane dividerPositions="0.18072289156626506" orientation="VERTICAL" prefHeight="500.0" prefWidth="400.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="contaEResultado" alignment="CENTER_RIGHT" layoutX="28.0" layoutY="29.0" prefHeight="79.0" prefWidth="348.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Nakula" size="35.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane layoutX="25.0" layoutY="47.0" prefHeight="297.0" prefWidth="354.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="47.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="108.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="btApagador" mnemonicParsing="false" onAction="#onBtApagadorAction" prefHeight="81.0" prefWidth="109.0" text="CE" />
+                        <Button fx:id="btMod" mnemonicParsing="false" onAction="#onBtModAction" prefHeight="65.0" prefWidth="95.0" text="Mod" GridPane.columnIndex="1" />
+                        <Button fx:id="btPercent" mnemonicParsing="false" onAction="#onBtPercAction" prefHeight="64.0" prefWidth="96.0" text="\%" GridPane.columnIndex="2" />
+                        <Button fx:id="btDiv" mnemonicParsing="false" onAction="#onBtDivAction" prefHeight="100.0" prefWidth="115.0" text="/" GridPane.columnIndex="3" />
+                        <Button fx:id="btNum7" mnemonicParsing="false" onAction="#onBtNum7Action" prefHeight="117.0" prefWidth="130.0" text="7" GridPane.rowIndex="1" />
+                        <Button fx:id="btNum8" mnemonicParsing="false" onAction="#onBtNum8Action" prefHeight="79.0" prefWidth="116.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="btNum9" mnemonicParsing="false" onAction="#onBtNum9Action" prefHeight="69.0" prefWidth="99.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button fx:id="btMult" mnemonicParsing="false" onAction="#onBtMultAction" prefHeight="82.0" prefWidth="111.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button fx:id="btNum4" mnemonicParsing="false" onAction="#onBtNum4Action" prefHeight="70.0" prefWidth="100.0" text="4" GridPane.rowIndex="2" />
+                        <Button fx:id="btNum5" mnemonicParsing="false" onAction="#onBtNum5Action" prefHeight="62.0" prefWidth="114.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="btNum6" mnemonicParsing="false" onAction="#onBtNum6Action" prefHeight="76.0" prefWidth="125.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button fx:id="btSub" mnemonicParsing="false" onAction="#onBtSubAction" prefHeight="91.0" prefWidth="117.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button fx:id="btNum1" mnemonicParsing="false" onAction="#onBtNum1Action" prefHeight="79.0" prefWidth="117.0" text="1" GridPane.rowIndex="3" />
+                        <Button fx:id="btNum2" mnemonicParsing="false" onAction="#onBtNum2Action" prefHeight="66.0" prefWidth="128.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button fx:id="btNum3" mnemonicParsing="false" onAction="#onBtNum3Action" prefHeight="67.0" prefWidth="111.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button fx:id="btSoma" mnemonicParsing="false" onAction="#onBtSomaAction" prefHeight="85.0" prefWidth="111.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button fx:id="btNum0" mnemonicParsing="false" onAction="#onBtNum0Action" prefHeight="80.0" prefWidth="160.0" text="0" GridPane.rowIndex="4" />
+                        <Button fx:id="virgula" mnemonicParsing="false" onAction="#onBtVirAction" prefHeight="79.0" prefWidth="146.0" text="," GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button fx:id="ponto" mnemonicParsing="false" onAction="#onBtPotAction" prefHeight="97.0" prefWidth="126.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Button fx:id="btIgual" mnemonicParsing="false" onAction="#onBtIgualAction" prefHeight="86.0" prefWidth="107.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
